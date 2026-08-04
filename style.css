@@ -1,4 +1,4 @@
-/* ===== RESET & BASE ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +24,6 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* ===== HEADER / CARD CONTAINER ===== */
 header {
     width: 100%;
     max-width: 1200px;
@@ -44,7 +43,7 @@ header {
     width: 100%;
 }
 
-/* ===== NAVIGATION ===== */
+/*  NAVIGATION bar*/
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +148,7 @@ footer {
     text-shadow: 0 0 12px rgba(163, 177, 155, 0.4);
 }
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVENESS */
 @media (max-width: 768px) {
     header {
         padding: 1.5rem 1rem;
