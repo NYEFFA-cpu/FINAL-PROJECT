@@ -1,0 +1,200 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: linear-gradient(-45deg, #A3B19B, #4A3E3D, #D4A59A, #A3B19B, #4A3E3D, #D4A59A);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== HEADER / CARD CONTAINER ===== */
+header {
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(163, 177, 155, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: 2rem;
+    padding: 2rem 2rem 1.5rem;
+    box-shadow: 0 20px 40px rgba(74, 62, 61, 0.5);
+    border: 1px solid rgba(212, 165, 154, 0.25);
+    transition: all 0.2s ease;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+/* ===== NAVIGATION ===== */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.4rem 0.8rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #D4A59A;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid rgba(163, 177, 155, 0.3);
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    background: rgba(74, 62, 61, 0.3);
+    backdrop-filter: blur(4px);
+    transition: 0.3s ease;
+    box-shadow: 0 2px 6px rgba(74, 62, 61, 0.3);
+}
+
+ul li a:hover {
+    background-color: #A3B19B;
+    color: #4A3E3D;
+    border-color: #D4A59A;
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(163, 177, 155, 0.5);
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 1.2rem;
+    padding: 1rem 0.5rem;
+}
+
+.title h1 {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    word-break: break-word;
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 4px 20px rgba(74, 62, 61, 0.3);
+}
+
+.title h1 strong {
+    font-weight: 700;
+    color: inherit;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    padding: 1.2rem 1.5rem;
+    background: rgba(74, 62, 61, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 60px;
+    border: 1px solid rgba(212, 165, 154, 0.25);
+    text-align: center;
+    color: #D4A59A;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 24px rgba(74, 62, 61, 0.4);
+    transition: 0.3s ease;
+}
+
+.footer-content span {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: #A3B19B;
+}
+
+.footer-content a {
+    color: #D4A59A;
+    text-decoration: none;
+    border-bottom: 1px dotted #A3B19B;
+    padding-bottom: 2px;
+    transition: 0.25s;
+}
+
+.footer-content a:hover {
+    color: #A3B19B;
+    border-bottom-color: #D4A59A;
+    text-shadow: 0 0 12px rgba(163, 177, 155, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    .main {
+        justify-content: center;
+    }
+
+    ul {
+        justify-content: center;
+        gap: 0.3rem;
+    }
+
+    ul li a {
+        padding: 0.3rem 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    .title {
+        margin: 1.2rem 0 0.5rem;
+    }
+
+    .footer-content {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.8rem;
+    }
+
+    ul li a {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .footer-content span {
+        margin: 0 0.25rem;
+    }
+}
