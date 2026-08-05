@@ -1,4 +1,4 @@
-/* ===== RESET & BASE ===== */
+/* == jefferson == */
 * {
     margin: 0;
     padding: 0;
@@ -23,8 +23,6 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
-/* ===== HEADER / CARD CONTAINER ===== */
 header {
     width: 100%;
     max-width: 1200px;
@@ -43,8 +41,6 @@ header {
     align-items: center;
     width: 100%;
 }
-
-/* ===== NAVIGATION ===== */
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -198,3 +194,4 @@ footer {
         margin: 0 0.25rem;
     }
 }
+/* == jefferson == */
