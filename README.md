@@ -25,3 +25,12 @@ Navigation: Five-page menu (Home, About, Services, Gallery, Contact) with clean,
 Hero message: A welcoming headline that introduces the brand's ethos of timeless style and natural materials
 
 Footer: Contains copyright information and brand descriptors ("handwoven · earthkind · slow fashion")
+# Linen & Lore – Gallery Page
+
+## 📖 Project Overview
+The **Linen & Lore Gallery Page** is a modern, responsive, and interactive webpage designed to showcase a clothing brand's collection in a clean and visually appealing way. The gallery allows visitors to browse fashion items through a responsive grid layout while enjoying smooth animations and interactive features powered by JavaScript.
+
+## 👩‍💻 Author
+Developed as a front-end web development project for **Linen & Lore**, a modern clothing brand focused on showcasing fashion collections through a stylish and user-friendly online gallery.
+## 📄 License
+This project is available for educational and personal use.
