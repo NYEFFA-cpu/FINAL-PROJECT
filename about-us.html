@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | LINEN & LORE</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="#styles.css">
 
 </head>
 
 <body>
     <header>
         <nav>
+            <button class="menu-toggle" aria-label="Open Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html" class="active">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Products</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
             </ul>
         </nav>
     </header>
@@ -24,19 +30,31 @@
         <section class="about-us">
             <h1>About LINEN & LORE</h1>
             <p>Welcome to LINEN & LORE, where we believe in the art of storytelling through our exquisite collection of
-                linens. Our journey began with a passion for quality, comfort, and timeless design. Each piece in our
+                linens. Our journey began with a passion for quality, comfort, and timeless design.<br><br>
+                Each piece in our
                 collection is crafted with care, ensuring that it not only enhances your living space but also tells a
                 story of elegance and sophistication.</p>
 
             <p>At LINEN & LORE, we are committed to sustainability and ethical practices. We source our materials
                 responsibly and work closely with artisans to create products that are not only beautiful but also
-                environmentally conscious. Our mission is to provide our customers with linens that bring warmth and
+                environmentally conscious. <br><br> Our mission is to provide our customers with linens that bring
+                warmth and
                 character to their homes while supporting a sustainable future.</p>
             <p>Thank you for choosing LINEN & LORE. We invite you to explore our collection and discover the perfect
                 pieces to complement your lifestyle. Join us on our journey as we continue to celebrate the beauty of
                 linens and the stories they tell.</p>
         </section>
     </main>
+
+    <!-- Interactive Lightbox Modal -->
+    <div id="preview-modal" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal-content">
+            <!-- FIX: Changed span to button for accessibility -->
+            <button class="close-btn" aria-label="Close modal">&times;</button>
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
 
 </body>
 
