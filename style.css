@@ -1,16 +1,4 @@
 /* = jefferson = */
-:root {
-    --sage: #A3B19B;
-    --charcoal: #4A3E3D;
-    --rose: #D4A59A;
-    --sage-rgb: 163, 177, 155;
-    --charcoal-rgb: 74, 62, 61;
-    --rose-rgb: 212, 165, 154;
-    --gold: #C9A96E;
-    --transition: 0.3s ease;
-    --shadow: 0 8px 24px rgba(74, 62, 61, 0.3);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -35,8 +23,9 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
-/* ===== HEADER / CARD CONTAINER ===== */
+/* jefferson */
+/* shalyn */
+/*  HEADER / CARD CONTAINER  */
 header {
     width: 100%;
     max-width: 1200px;
@@ -59,7 +48,7 @@ header {
     width: 100%;
 }
 
-/* ===== NAVIGATION ===== */
+/*  NAVIGATION  */
 ul, .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +108,7 @@ ul li a:hover, .nav-links a:hover {
     width: 60%;
 }
 
-/* ===== LOGO ===== */
+/*  LOGO  */
 .logo {
     font-size: 2rem;
     font-weight: bold;
@@ -178,7 +167,7 @@ ul li a:hover, .nav-links a:hover {
     color: #f5f5f5;
 }
 
-/* ===== FILTER BUTTONS ===== */
+/*  FILTER BUTTONS  */
 .filters {
     display: flex;
     justify-content: center;
@@ -337,7 +326,7 @@ ul li a:hover, .nav-links a:hover {
     transform: scale(1.1);
 }
 
-/* ===== MODAL ===== */
+/*  MODAL  */
 .modal {
     display: none;
     position: fixed;
@@ -561,4 +550,17 @@ footer {
     .footer-content span {
         margin: 0 0.25rem;
     }
+}
+
+/* = shalyn = */
+:root {
+    --sage: #A3B19B;
+    --charcoal: #4A3E3D;
+    --rose: #D4A59A;
+    --sage-rgb: 163, 177, 155;
+    --charcoal-rgb: 74, 62, 61;
+    --rose-rgb: 212, 165, 154;
+    --gold: #C9A96E;
+    --transition: 0.3s ease;
+    --shadow: 0 8px 24px rgba(74, 62, 61, 0.3);
 }
