@@ -135,3 +135,193 @@ window.addEventListener("load", () => {
     });
 });
 // shalyn
+
+//services page
+//Martin
+
+console.log("JavaScript loaded successfully!");
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Welcome Message
+    const messageBox = document.getElementById("messageBox");
+
+    let username = localStorage.getItem("username");
+
+    if (!username) {
+        username = prompt("Welcome to LINEN & LORE!\nPlease enter your name:");
+
+        if (username !== null && username.trim() !== "") {
+            localStorage.setItem("username", username);
+        } else {
+            username = "Guest";
+        }
+    }
+
+    if (messageBox) {
+        messageBox.innerHTML = `<h3>Welcome, ${username}! 👋</h3>`;
+    }
+
+    // Service Cards
+    const cards = document.querySelectorAll(".services-card");
+
+    cards.forEach(card => {
+
+        card.addEventListener("mouseenter", () => {
+            card.style.transform = "translateY(-10px)";
+            card.style.transition = "0.4s";
+        });
+
+        card.addEventListener("mouseleave", () => {
+            card.style.transform = "translateY(0)";
+        });
+
+        card.addEventListener("click", () => {
+
+            const service =
+                card.querySelector("h3").textContent;
+
+            localStorage.setItem("selectedService", service);
+
+            alert(service + " selected!");
+        });
+
+    });
+
+    // Explore Collection Button
+    const exploreBtn = document.getElementById("exploreBtn");
+
+    if (exploreBtn) {
+
+        exploreBtn.addEventListener("click", function () {
+
+            localStorage.setItem(
+                "lastVisited",
+                "Services Page"
+            );
+
+        });
+
+    }
+
+    // Customer Reviews
+    const reviews =
+        document.querySelectorAll(".review-card");
+
+    reviews.forEach((review, index) => {
+
+        review.style.opacity = "0";
+
+        setTimeout(() => {
+
+            review.style.opacity = "1";
+            review.style.transition = "1s";
+
+        }, index * 500);
+
+    });
+
+    // Highlight Stars
+    const stars =
+        document.querySelectorAll(".stars i");
+
+    stars.forEach(star => {
+
+        star.addEventListener("mouseover", function () {
+
+            this.style.color = "gold";
+
+        });
+
+        star.addEventListener("mouseout", function () {
+
+            this.style.color = "";
+
+        });
+
+    });
+
+});
+
+//scroll button
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+
+        topBtn.style.display = "block";
+
+    } else {
+
+        topBtn.style.display = "none";
+
+    }
+
+});
+
+topBtn.addEventListener("click", function () {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+// Save Last Visit
+
+const today = new Date();
+
+localStorage.setItem("lastVisit", today.toLocaleString());
+
+// Display Previous Visit
+
+const previousVisit =
+    localStorage.getItem("lastVisit");
+
+if (previousVisit) {
+
+    console.log(
+        "Last Visit:",
+        previousVisit
+    );
+
+}
+
+// Error Handling Example
+
+try {
+
+    const services =
+        document.querySelector(".services");
+
+    if (!services) {
+
+        throw new Error(
+            "Services section not found."
+        );
+
+    }
+
+} catch (error) {
+
+    console.error(error.message);
+
+}
+
+// Footer Year
+
+
+const footer =
+    document.querySelector("footer p");
+
+if (footer) {
+
+    footer.innerHTML =
+        `© ${new Date().getFullYear()} LINEN & LORE. All Rights Reserved.`;
+
+}
+//Martin
