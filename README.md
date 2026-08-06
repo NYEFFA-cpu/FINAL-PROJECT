@@ -13,7 +13,7 @@ Responsive design that adapts gracefully for tablets and mobile devices, adjusti
 
 Footer with a blurred glass effect, subtle borders, and interactive link hover states
 
-The overall design evokes a sense of craftsmanship, elegance, and natural luxury, perfectly aligning with a slow-fashion brand identity.
+The overall design evokes a sense of craftsmanship, elegance, and natural luxury, perfectly aligning with a slow-fashion brand identityimpl
 
 ## HTML Summary
 This is the homepage for LINEN & LORE, a brand specialising in sustainable, earth-friendly linen fashion. The page structure includes:
