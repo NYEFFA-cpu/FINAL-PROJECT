@@ -22,3 +22,21 @@
         button.textContent="submitted!";
     }, 2000);
  });
+
+ // enabling button only with text
+ const input=document.getElementById("name");
+ const emailinput=document.getElementById("email");
+ const button=document.getElementById("submitbutton");
+
+ function validateform(){
+    const namevalue=nameinput.value.trim()
+    const emailvalue=emailinput.value.trim();
+
+    if (namevalue !== ""&& emailvalue !== ""){
+        button.disabled = false;
+     } else {
+        button.disabled = true;
+     }
+    }
+    nameinput.addEventListener("input", validateform)
+    emailinput.addEventListener("input", validateform)
