@@ -135,3 +135,56 @@ window.addEventListener("load", () => {
     });
 });
 // shalyn
+//victor
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- Mobile Navigation Logic ---
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        navUl.classList.toggle('show');
+        
+        // Optional: Animate hamburger to X
+        const bars = document.querySelectorAll('.bar');
+        bars[0].style.transform = navUl.classList.contains('show') ? 'rotate(45deg) translate(5px, 6px)' : 'none';
+        bars[1].style.opacity = navUl.classList.contains('show') ? '0' : '1';
+        bars[2].style.transform = navUl.classList.contains('show') ? 'rotate(-45deg) translate(5px, -6px)' : 'none';
+    });
+
+
+    // --- Modal Logic ---
+    const modal = document.getElementById('preview-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
+
+    // Function to open modal
+    function openModal(title, description) {
+        modalTitle.textContent = title;
+        modalDesc.textContent = description;
+        modal.style.display = 'flex';
+        modal.setAttribute('aria-hidden', 'false');
+    }
+
+    // Function to close modal
+    function closeModal() {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+
+    // Close modal if user clicks outside the content box
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+    setTimeout(() => {
+        // Uncomment the line below to test the modal on page load
+        // openModal("Welcome to LINEN & LORE", "Discover our new Summer Collection in the products gallery.");
+    }, 2000);
+
+});
+//victor
